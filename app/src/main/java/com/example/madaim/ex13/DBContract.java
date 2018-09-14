@@ -1,11 +1,12 @@
 package com.example.madaim.ex13;
 
+
 import android.provider.BaseColumns;
 
 public class DBContract {
 
 	// Database Version
-    static final int DATABASE_VERSION = 4;
+    static final int DATABASE_VERSION = 5;
  
     // Database Name
     static final String DATABASE_NAME = "GridData";

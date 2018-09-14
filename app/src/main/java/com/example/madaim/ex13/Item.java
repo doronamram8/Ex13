@@ -1,29 +1,36 @@
 package com.example.madaim.ex13;
 
-/**
- * Created by Madaim on 07/09/2018.
- */
 
 public class Item {
-    int id;
+    long id;
     int num;
     int color;
 
-    public Item( int num, int color) {
+    public Item(){};
+
+    public Item(int num, int color) {
         this.num = num;
         this.color = color;
+
     }
 
-    public int getId() {
-        return this.id;
+    public Item(int num, int color,long id) {
+        this.num = num;
+        this.color = color;
+        this.id=id;
+
     }
 
-    public void setId(int id) {
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
         this.id = id;
     }
 
     public int getNum() {
-        return this.num;
+        return num;
     }
 
     public void setNum(int num) {
@@ -31,7 +38,7 @@ public class Item {
     }
 
     public int getColor() {
-        return this.color;
+        return color;
     }
 
     public void setColor(int color) {
